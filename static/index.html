@@ -48,10 +48,19 @@ function sendJSONXMLHTTPRequest(url, objects, callback) {
             }
         }
     };
-    xhr.open("POST", url, true);
-    xhr.setRequestHeader("Content-type", "application/json");
-    xhr.setRequestHeader("Accept", "application/json");
-    xhr.send(JSON.stringify(objects));
+    if (url == '/world'){
+        xhr.open('GET', url, true)
+        xhr.setRequestHeader("Content-type", "application/json");
+        xhr.setRequestHeader("Accept", "application/json");
+        xhr.send(JSON.stringify(objects));
+
+    }
+    else{
+        xhr.open("POST", url, true);
+        xhr.setRequestHeader("Content-type", "application/json");
+        xhr.setRequestHeader("Accept", "application/json");
+        xhr.send(JSON.stringify(objects));
+    }
 
 }
 
