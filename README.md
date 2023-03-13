@@ -12,7 +12,6 @@ Contributors / Licensing
 References:
 ========================
 https://www.w3schools.com/tags/canvas_addcolorstop.asp,
-
 https://www.w3schools.com/xml/ajax_xmlhttprequest_send.asp,
 https://stackoverflow.com/questions/1152024/best-way-to-generate-a-random-color-in-javascript,
 
